@@ -1,6 +1,8 @@
 package bankGuruActions;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import BankGuruTestcases.RegisterScript;
@@ -16,39 +18,49 @@ public class LoginPage extends CommonFunctions  {
 		// TODO Auto-generated constructor stub
 	}
 
+	@FindBy(linkText = "here")
+	WebElement HERE_LINK;	
+	@FindBy(name = "uid")
+	WebElement USERNAME_LOGIN_TXT;
+	@FindBy(name= "password")
+	WebElement PASSWORD_LOGIN_TXT;
+	@FindBy(name= "btnLogin")
+	WebElement LOGIN_BTN;
+
+
 	public RegisterPage ClickHereLink() {
-		waitVisible(LoginPageUI.HERE_LINK);
-		click(LoginPageUI.HERE_LINK);
+		waitVisible(HERE_LINK);
+		click(HERE_LINK);
 		return PageFactory.initElements(driver, RegisterPage.class);
 
 	}
 	public void inputUserName(String username)
 	{
-		waitVisible(LoginPageUI.USERNAME_LOGIN_TXT);
-		input(LoginPageUI.USERNAME_LOGIN_TXT, username);
+		waitVisible(USERNAME_LOGIN_TXT);
+		input(USERNAME_LOGIN_TXT, username);
 		
 		
 	}
 	public HomePage ClickLogin()
 	{
-		click(LoginPageUI.LOGIN_BTN);
+		click(LOGIN_BTN);
 		return PageFactory.initElements(driver, HomePage.class);
 	
 	}
 	public void inputPassword(String password)
 	{
-		waitVisible(LoginPageUI.PASSWORD_LOGIN_TXT);
-		input(LoginPageUI.PASSWORD_LOGIN_TXT, password);
+		waitVisible(PASSWORD_LOGIN_TXT);
+		input(PASSWORD_LOGIN_TXT, password);
 		
 		
 	}
 	public HomePage Login(String username,String password)
 	{
-		waitVisible(LoginPageUI.USERNAME_LOGIN_TXT);
-		input(LoginPageUI.USERNAME_LOGIN_TXT, username);
-		waitVisible(LoginPageUI.PASSWORD_LOGIN_TXT);
-		input(LoginPageUI.PASSWORD_LOGIN_TXT, password);
-		click(LoginPageUI.LOGIN_BTN);
+		waitVisible(USERNAME_LOGIN_TXT);
+		input(USERNAME_LOGIN_TXT, username);
+		waitVisible(PASSWORD_LOGIN_TXT);
+		input(PASSWORD_LOGIN_TXT, password);
+		click(LOGIN_BTN);
 		return PageFactory.initElements(driver,HomePage.class);
 		
 	}

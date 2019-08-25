@@ -31,38 +31,91 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Login guru on Chrome</td><td class="numi">10</td><td class="numi">10</td><td class="numi">0</td><td class="numi">0</td><td class="numi">62.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Login guru on Chrome</td><td class="numi">11</td><td class="numi">11</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">3,784.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Login guru on Chrome &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">BankGuruTestcases.NewAccountScript</td><td><a href="#m1"><b>TC_02_InitialDepositCannotBlank</b>  </a></td><td class="numi">1</td><td>1566647896008</td><td class="numi">231</td></tr>
+<tr class="failedeven"><td rowspan="1">BankGuruTestcases.EditCustomerScript</td><td><a href="#m2"><b>TC_06_EditEmail</b>  </a></td><td class="numi">1</td><td>1566644171588</td><td class="numi">83879</td></tr>
 <tr><th colspan="4">Login guru on Chrome &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">BankGuruTestcases.NewCustomerScript</td><td><a href="#m1"><b>TC_01_CustomerCannotBlank</b>  </a></td><td class="numi">1</td><td>1560592927214</td><td class="numi">176</td></tr>
-<tr class="passedeven"><td rowspan="1">BankGuruTestcases.EditCustomerScript</td><td><a href="#m2"><b>TC_01_EditAddress</b>  </a></td><td class="numi">1</td><td>1560592944838</td><td class="numi">1530</td></tr>
-<tr class="passedodd"><td rowspan="1">BankGuruTestcases.NewCustomerScript</td><td><a href="#m3"><b>TC_02_DateFieldCannotBlank</b>  </a></td><td class="numi">1</td><td>1560592927398</td><td class="numi">155</td></tr>
-<tr class="passedeven"><td rowspan="2">BankGuruTestcases.EditCustomerScript</td><td><a href="#m4"><b>TC_02_EditCity</b>  </a></td><td class="numi">1</td><td>1560592948108</td><td class="numi">1542</td></tr><tr class="passedeven"><td><a href="#m5"><b>TC_03_EditState</b>  </a></td><td class="numi">1</td><td>1560592952009</td><td class="numi">1411</td></tr>
-<tr class="passedodd"><td rowspan="1">BankGuruTestcases.NewCustomerScript</td><td><a href="#m6"><b>TC_03_SignUpNewCustomer</b>  </a></td><td class="numi">1</td><td>1560592927557</td><td class="numi">3064</td></tr>
-<tr class="passedeven"><td rowspan="3">BankGuruTestcases.EditCustomerScript</td><td><a href="#m7"><b>TC_04_EditPin</b>  </a></td><td class="numi">1</td><td>1560592955454</td><td class="numi">1727</td></tr><tr class="passedeven"><td><a href="#m8"><b>TC_05_EditPhone</b>  </a></td><td class="numi">1</td><td>1560592958940</td><td class="numi">1627</td></tr><tr class="passedeven"><td><a href="#m9"><b>TC_06_EditEmail</b>  </a></td><td class="numi">1</td><td>1560592962307</td><td class="numi">1480</td></tr>
-<tr class="passedodd"><td rowspan="1">BankGuruTestcases.RegisterScript</td><td><a href="#m10"><b>getAccountRegister</b>  </a></td><td class="numi">1</td><td>1560592912998</td><td class="numi">1332</td></tr>
+<tr class="passedodd"><td rowspan="1">BankGuruTestcases.NewCustomerScript</td><td><a href="#m3"><b>TC_01_CustomerCannotBlank</b>  </a></td><td class="numi">1</td><td>1566644137817</td><td class="numi">217</td></tr>
+<tr class="passedeven"><td rowspan="1">BankGuruTestcases.NewAccountScript</td><td><a href="#m4"><b>TC_01_CustomerIDCannotBlank</b>  </a></td><td class="numi">1</td><td>1566647895315</td><td class="numi">192</td></tr>
+<tr class="passedodd"><td rowspan="1">BankGuruTestcases.EditCustomerScript</td><td><a href="#m5"><b>TC_01_EditAddress</b>  </a></td><td class="numi">1</td><td>1566644153992</td><td class="numi">1404</td></tr>
+<tr class="passedeven"><td rowspan="1">BankGuruTestcases.NewCustomerScript</td><td><a href="#m6"><b>TC_02_DateFieldCannotBlank</b>  </a></td><td class="numi">1</td><td>1566644138041</td><td class="numi">150</td></tr>
+<tr class="passedodd"><td rowspan="1">BankGuruTestcases.EditCustomerScript</td><td><a href="#m7"><b>TC_02_EditCity</b>  </a></td><td class="numi">1</td><td>1566644157118</td><td class="numi">1474</td></tr>
+<tr class="passedeven"><td rowspan="1">BankGuruTestcases.NewAccountScript</td><td><a href="#m8"><b>TC_03_CanCreateNewAccount</b>  </a></td><td class="numi">1</td><td>1566647896798</td><td class="numi">1675</td></tr>
+<tr class="passedodd"><td rowspan="1">BankGuruTestcases.EditCustomerScript</td><td><a href="#m9"><b>TC_03_EditState</b>  </a></td><td class="numi">1</td><td>1566644160292</td><td class="numi">2207</td></tr>
+<tr class="passedeven"><td rowspan="1">BankGuruTestcases.NewCustomerScript</td><td><a href="#m10"><b>TC_03_SignUpNewCustomer</b>  </a></td><td class="numi">1</td><td>1566644138192</td><td class="numi">3164</td></tr>
+<tr class="passedodd"><td rowspan="2">BankGuruTestcases.EditCustomerScript</td><td><a href="#m11"><b>TC_04_EditPin</b>  </a></td><td class="numi">1</td><td>1566644164428</td><td class="numi">1694</td></tr><tr class="passedodd"><td><a href="#m12"><b>TC_05_EditPhone</b>  </a></td><td class="numi">1</td><td>1566644167795</td><td class="numi">2198</td></tr>
+<tr class="passedeven"><td rowspan="1">BankGuruTestcases.RegisterScript</td><td><a href="#m13"><b>getAccountRegister</b>  </a></td><td class="numi">1</td><td>1566644125997</td><td class="numi">1448</td></tr>
 </table>
 <h1>Login guru on Chrome</h1>
-<h2 id="m1">BankGuruTestcases.EditCustomerScript:TC_03_EditState</h2>
+<h2 id="m1">BankGuruTestcases.EditCustomerScript:TC_06_EditEmail</h2>
+<div style="padding-left:3em">
+<p>disconnected: Unable to receive message from renderer
+  (Session info: chrome=76.0.3809.100)
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;LAPTOP-4MO39718&apos;, ip: &apos;192.168.1.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.25 (a0c95f440512e..., userDataDir: C:\Users\DUYEND~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59514}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9d872556e677fb6bd76da748bc7ee951</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+<br/>at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+<br/>at com.sun.proxy.$Proxy12.click(Unknown Source)
+<br/>at commonPage.CommonFunctions.click(CommonFunctions.java:52)
+<br/>at bankGuruActions.EditCustomerPage.clickSubmitEditCustomer(EditCustomerPage.java:121)
+<br/>at BankGuruTestcases.EditCustomerScript.TC_06_EditEmail(EditCustomerScript.java:97)
+<br/>21 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">BankGuruTestcases.EditCustomerScript:TC_01_EditAddress</h2>
+<h2 id="m2">BankGuruTestcases.NewAccountScript:TC_02_InitialDepositCannotBlank</h2>
+<div style="padding-left:3em">
+<p>expected [Initial Deposit must not be blank] but found [Customer ID is required]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at commonPage.CommonTestcases.verifyEqual(CommonTestcases.java:103)
+<br/>at BankGuruTestcases.NewAccountScript.TC_02_InitialDepositCannotBlank(NewAccountScript.java:62)
+<br/>21 lines not shown
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">BankGuruTestcases.NewCustomerScript:TC_03_SignUpNewCustomer</h2>
+<h2 id="m3">BankGuruTestcases.EditCustomerScript:TC_02_EditCity</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">BankGuruTestcases.NewCustomerScript:TC_02_DateFieldCannotBlank</h2>
+<h2 id="m4">BankGuruTestcases.EditCustomerScript:TC_01_EditAddress</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">BankGuruTestcases.RegisterScript:getAccountRegister</h2>
+<h2 id="m5">BankGuruTestcases.EditCustomerScript:TC_04_EditPin</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m6">BankGuruTestcases.EditCustomerScript:TC_05_EditPhone</h2>
+<h2 id="m6">BankGuruTestcases.NewAccountScript:TC_01_CustomerIDCannotBlank</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m7">BankGuruTestcases.EditCustomerScript:TC_06_EditEmail</h2>
+<h2 id="m7">BankGuruTestcases.NewCustomerScript:TC_02_DateFieldCannotBlank</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m8">BankGuruTestcases.EditCustomerScript:TC_02_EditCity</h2>
+<h2 id="m8">BankGuruTestcases.NewCustomerScript:TC_03_SignUpNewCustomer</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m9">BankGuruTestcases.EditCustomerScript:TC_04_EditPin</h2>
+<h2 id="m9">BankGuruTestcases.RegisterScript:getAccountRegister</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m10">BankGuruTestcases.NewCustomerScript:TC_01_CustomerCannotBlank</h2>
+<h2 id="m10">BankGuruTestcases.EditCustomerScript:TC_03_EditState</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">BankGuruTestcases.EditCustomerScript:TC_05_EditPhone</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">BankGuruTestcases.NewCustomerScript:TC_01_CustomerCannotBlank</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">BankGuruTestcases.NewAccountScript:TC_03_CanCreateNewAccount</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

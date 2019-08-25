@@ -6,8 +6,9 @@
 		<parameter name="url" value="http://demo.guru99.com/v4" />
 		<classes>
                  <class name="BankGuruTestcases.RegisterScript" />
-                  <class name="BankGuruTestcases.NewCustomerScript" />
-                   <class name="BankGuruTestcases.EditCustomerScript" />
+                 <class name="BankGuruTestcases.NewCustomerScript" />
+                 <class name="BankGuruTestcases.EditCustomerScript" />
+                 <class name="BankGuruTestcases.NewAccountScript" />
 		</classes>
 	</test>
 <!-- 	<test name="Login guru on Firefox"> -->

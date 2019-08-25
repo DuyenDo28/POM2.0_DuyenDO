@@ -5,6 +5,7 @@ public class HomePageUI {
 	public static final String NEWCUSTOMER_MENU="//a[text()='New Customer']";
 	public static final String EDITCUSTOMER_MENU="//a[text()='Edit Customer']";
 	public static final String EDITCUSTOMER_LINK = "//a[contains(text(),'Edit Customer')]";
+	public static final String NEWACCOUNT_LINK = "//a[contains(text(),'New Account')]";
 	
 
 }

@@ -11,20 +11,24 @@
     <classes>
       <class name="BankGuruTestcases.EditCustomerScript">
         <methods>
-          <include name="TC_03_EditState"/>
+          <include name="AfterMethod"/>
           <include name="BeforeClass"/>
-          <include name="TC_02_EditCity"/>
-          <include name="TC_05_EditPhone"/>
           <include name="TC_06_EditEmail"/>
-          <include name="TC_01_EditAddress"/>
-          <include name="TC_04_EditPin"/>
           <include name="BeforeMethod"/>
+          <include name="AfterClass"/>
         </methods>
       </class> <!-- BankGuruTestcases.EditCustomerScript -->
+      <class name="BankGuruTestcases.NewAccountScript">
+        <methods>
+          <include name="BeforeClass"/>
+          <include name="TC_02_InitialDepositCannotBlank"/>
+          <include name="AfterClass"/>
+          <include name="BeforeMethod"/>
+        </methods>
+      </class> <!-- BankGuruTestcases.NewAccountScript -->
       <class name="BankGuruTestcases.NewCustomerScript">
         <methods>
           <include name="AfterClass"/>
-          <include name="TC_03_SignUpNewCustomer"/>
           <include name="BeforeClass"/>
           <include name="AfterMethod"/>
           <include name="BeforeMethod"/>

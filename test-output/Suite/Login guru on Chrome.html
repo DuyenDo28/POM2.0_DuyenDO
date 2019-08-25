@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Login guru on Chrome</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>11/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jun 15 17:01:41 ICT 2019</td>
+<td>Started on:</td><td>Sat Aug 24 17:55:14 ICT 2019</td>
 </tr>
-<tr><td>Total time:</td><td>62 seconds (62573 ms)</td>
+<tr><td>Total time:</td><td>3784 seconds (3784166 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,132 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='BankGuruTestcases.NewAccountScript.TC_02_InitialDepositCannotBlank()'><b>TC_02_InitialDepositCannotBlank</b><br>Test class: BankGuruTestcases.NewAccountScript</td>
+<td><div><pre>java.lang.AssertionError: expected [Initial Deposit must not be blank] but found [Customer ID is required]
+	at commonPage.CommonTestcases.verifyEqual(CommonTestcases.java:103)
+	at BankGuruTestcases.NewAccountScript.TC_02_InitialDepositCannotBlank(NewAccountScript.java:62)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1090521368", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1090521368'><pre>java.lang.AssertionError: expected [Initial Deposit must not be blank] but found [Customer ID is required]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at commonPage.CommonTestcases.verifyEqual(CommonTestcases.java:103)
+	at BankGuruTestcases.NewAccountScript.TC_02_InitialDepositCannotBlank(NewAccountScript.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>0</td>
+<td>BankGuruTestcases.NewAccountScript@4b9e13df</td></tr>
+<tr>
+<td title='BankGuruTestcases.EditCustomerScript.TC_06_EditEmail()'><b>TC_06_EditEmail</b><br>Test class: BankGuruTestcases.EditCustomerScript</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: Unable to receive message from renderer
+  (Session info: chrome=76.0.3809.100)
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;LAPTOP-4MO39718&apos;, ip: &apos;192.168.1.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.25 (a0c95f440512e..., userDataDir: C:\Users\DUYEND~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59514}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9d872556e677fb6bd76da748bc7ee951
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at commonPage.CommonFunctions.click(CommonFunctions.java:52)
+	at bankGuruActions.EditCustomerPage.clickSubmitEditCustomer(EditCustomerPage.java:121)
+	at BankGuruTestcases.EditCustomerScript.TC_06_EditEmail(EditCustomerScript.java:97)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1671851028", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1671851028'><pre>org.openqa.selenium.WebDriverException: disconnected: Unable to receive message from renderer
+  (Session info: chrome=76.0.3809.100)
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;LAPTOP-4MO39718&apos;, ip: &apos;192.168.1.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.100, chrome: {chromedriverVersion: 76.0.3809.25 (a0c95f440512e..., userDataDir: C:\Users\DUYEND~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59514}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9d872556e677fb6bd76da748bc7ee951
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at commonPage.CommonFunctions.click(CommonFunctions.java:52)
+	at bankGuruActions.EditCustomerPage.clickSubmitEditCustomer(EditCustomerPage.java:121)
+	at BankGuruTestcases.EditCustomerScript.TC_06_EditEmail(EditCustomerScript.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+</pre></div></td>
+<td>83</td>
+<td>BankGuruTestcases.EditCustomerScript@1b604f19</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -78,52 +204,57 @@ function toggleAllBoxes() {
 <td title='BankGuruTestcases.NewCustomerScript.TC_01_CustomerCannotBlank()'><b>TC_01_CustomerCannotBlank</b><br>Test class: BankGuruTestcases.NewCustomerScript</td>
 <td></td>
 <td>0</td>
-<td>BankGuruTestcases.NewCustomerScript@18be83e4</td></tr>
+<td>BankGuruTestcases.NewCustomerScript@cb5822</td></tr>
+<tr>
+<td title='BankGuruTestcases.NewAccountScript.TC_01_CustomerIDCannotBlank()'><b>TC_01_CustomerIDCannotBlank</b><br>Test class: BankGuruTestcases.NewAccountScript</td>
+<td></td>
+<td>0</td>
+<td>BankGuruTestcases.NewAccountScript@4b9e13df</td></tr>
 <tr>
 <td title='BankGuruTestcases.EditCustomerScript.TC_01_EditAddress()'><b>TC_01_EditAddress</b><br>Test class: BankGuruTestcases.EditCustomerScript</td>
 <td></td>
 <td>1</td>
-<td>BankGuruTestcases.EditCustomerScript@1593948d</td></tr>
+<td>BankGuruTestcases.EditCustomerScript@1b604f19</td></tr>
 <tr>
 <td title='BankGuruTestcases.NewCustomerScript.TC_02_DateFieldCannotBlank()'><b>TC_02_DateFieldCannotBlank</b><br>Test class: BankGuruTestcases.NewCustomerScript</td>
 <td></td>
 <td>0</td>
-<td>BankGuruTestcases.NewCustomerScript@18be83e4</td></tr>
+<td>BankGuruTestcases.NewCustomerScript@cb5822</td></tr>
 <tr>
 <td title='BankGuruTestcases.EditCustomerScript.TC_02_EditCity()'><b>TC_02_EditCity</b><br>Test class: BankGuruTestcases.EditCustomerScript</td>
 <td></td>
 <td>1</td>
-<td>BankGuruTestcases.EditCustomerScript@1593948d</td></tr>
+<td>BankGuruTestcases.EditCustomerScript@1b604f19</td></tr>
+<tr>
+<td title='BankGuruTestcases.NewAccountScript.TC_03_CanCreateNewAccount()'><b>TC_03_CanCreateNewAccount</b><br>Test class: BankGuruTestcases.NewAccountScript</td>
+<td></td>
+<td>1</td>
+<td>BankGuruTestcases.NewAccountScript@4b9e13df</td></tr>
 <tr>
 <td title='BankGuruTestcases.EditCustomerScript.TC_03_EditState()'><b>TC_03_EditState</b><br>Test class: BankGuruTestcases.EditCustomerScript</td>
 <td></td>
-<td>1</td>
-<td>BankGuruTestcases.EditCustomerScript@1593948d</td></tr>
+<td>2</td>
+<td>BankGuruTestcases.EditCustomerScript@1b604f19</td></tr>
 <tr>
 <td title='BankGuruTestcases.NewCustomerScript.TC_03_SignUpNewCustomer()'><b>TC_03_SignUpNewCustomer</b><br>Test class: BankGuruTestcases.NewCustomerScript</td>
 <td></td>
 <td>3</td>
-<td>BankGuruTestcases.NewCustomerScript@18be83e4</td></tr>
+<td>BankGuruTestcases.NewCustomerScript@cb5822</td></tr>
 <tr>
 <td title='BankGuruTestcases.EditCustomerScript.TC_04_EditPin()'><b>TC_04_EditPin</b><br>Test class: BankGuruTestcases.EditCustomerScript</td>
 <td></td>
 <td>1</td>
-<td>BankGuruTestcases.EditCustomerScript@1593948d</td></tr>
+<td>BankGuruTestcases.EditCustomerScript@1b604f19</td></tr>
 <tr>
 <td title='BankGuruTestcases.EditCustomerScript.TC_05_EditPhone()'><b>TC_05_EditPhone</b><br>Test class: BankGuruTestcases.EditCustomerScript</td>
 <td></td>
-<td>1</td>
-<td>BankGuruTestcases.EditCustomerScript@1593948d</td></tr>
-<tr>
-<td title='BankGuruTestcases.EditCustomerScript.TC_06_EditEmail()'><b>TC_06_EditEmail</b><br>Test class: BankGuruTestcases.EditCustomerScript</td>
-<td></td>
-<td>1</td>
-<td>BankGuruTestcases.EditCustomerScript@1593948d</td></tr>
+<td>2</td>
+<td>BankGuruTestcases.EditCustomerScript@1b604f19</td></tr>
 <tr>
 <td title='BankGuruTestcases.RegisterScript.getAccountRegister()'><b>getAccountRegister</b><br>Test class: BankGuruTestcases.RegisterScript</td>
 <td></td>
 <td>1</td>
-<td>BankGuruTestcases.RegisterScript@cb5822</td></tr>
+<td>BankGuruTestcases.RegisterScript@2b98378d</td></tr>
 </table><p>
 </body>
 </html>

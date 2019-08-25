@@ -40,10 +40,6 @@ public class RegisterScript extends CommonTestcases {
 //		loginPage.inputUserName(userName);
 //		loginPage.inputPassword(passWord);
 //		loginPage.ClickLogin();
-		
-		
-		
-
 	}
 
 	@AfterClass

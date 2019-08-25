@@ -1,6 +1,8 @@
 package bankGuruActions;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import bankGuruUI.HomePageUI;
@@ -12,19 +14,36 @@ public class HomePage extends CommonFunctions {
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
+	
+	//@FindBy(tagName = "marquee")
+	WebElement WELCOME_TXT;	
+	@FindBy(linkText = "New Customer")
+	WebElement NEWCUSTOMER_MENU;
+	@FindBy(linkText = "Edit Customer")
+	WebElement EDITCUSTOMER_LINK;
+;
+
+
 	public NewCustomerPage ClickNewCustomer()
 	{
-		waitVisible(HomePageUI.NEWCUSTOMER_MENU);
-		click(HomePageUI.NEWCUSTOMER_MENU);
+		waitVisible(NEWCUSTOMER_MENU);
+		click(NEWCUSTOMER_MENU);
 		
 		return PageFactory.initElements(driver, NewCustomerPage.class);
 		
 	}
 	public EditCustomerPage ClickEditCustomer()
 	{
-		waitVisible(HomePageUI.EDITCUSTOMER_LINK);
-		click(HomePageUI.EDITCUSTOMER_LINK);
+		waitVisible(EDITCUSTOMER_LINK);
+		click(EDITCUSTOMER_LINK);
 		return PageFactory.initElements(driver, EditCustomerPage.class);
+		
+	}
+	public NewAccountPage ClickNewAccount()
+	{
+		waitVisible(HomePageUI.NEWACCOUNT_LINK);
+		click(HomePageUI.NEWACCOUNT_LINK);
+		return PageFactory.initElements(driver, NewAccountPage.class);
 		
 	}
 	

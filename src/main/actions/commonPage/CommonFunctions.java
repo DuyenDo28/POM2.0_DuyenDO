@@ -48,18 +48,25 @@ public class CommonFunctions extends BasePage{
 		return driver.getCurrentUrl();
 	}
 
-	public void click(String locator) {
+	public void click(WebElement element) {
+		element.click();
+	}
+	public void clickLocator(String locator) {
 		WebElement element = driver.findElement(By.xpath(locator));
 		element.click();
 	}
 
-	public void input(String locator, String value) {
-		WebElement element = driver.findElement(By.xpath(locator));
+	public void input(WebElement element, String value) {
+		
 		element.sendKeys(value);
 	}
 
-	public String getText(String locator) {
-		WebElement element = driver.findElement(By.xpath(locator));
+	public String getText(WebElement element) {
+		//WebElement element = driver.findElement(By.xpath(element));
+		return element.getText();
+	}
+	public String getTextElement(WebElement element) {
+		
 		return element.getText();
 	}
 
@@ -75,8 +82,7 @@ public class CommonFunctions extends BasePage{
 		driver.navigate().to(url);
 	}
 
-	public void clearText(String locator) {
-		WebElement element = driver.findElement(By.xpath(locator));
+	public void clearText(WebElement element) {
 		element.clear();
 	}
 
@@ -269,8 +275,8 @@ public class CommonFunctions extends BasePage{
 
 	}
 
-	public void inputKeys(String locator, Keys key) {
-		WebElement element = driver.findElement(By.xpath(locator));
+	public void inputKeys(WebElement element, Keys key) {
+		//WebElement element = driver.findElement(By.xpath());
 		element.sendKeys(key);
 	}
 
@@ -341,14 +347,44 @@ public class CommonFunctions extends BasePage{
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(locator)));
 	}
 
-	public void waitVisible(String locator) {
+	public void waitVisible(WebElement element) {
 		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOf(element));
+	}
+	public void waitVisible(String locator) {
+		WebDriverWait wait = new WebDriverWait(driver, timeouts);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
 	}
-
+	public void click(String locator) {
+		WebElement element = driver.findElement(By.xpath(locator));
+		element.click();
+	}
+	public void inputKeys(String locator, Keys key) {
+		WebElement element = driver.findElement(By.xpath(locator));
+		element.sendKeys(key);
+	}
+	public String getText(String locator) {
+		WebElement element = driver.findElement(By.xpath(locator));
+		return element.getText();
+	}
+	public void input(String locator, String value) {
+		WebElement element = driver.findElement(By.xpath(locator));
+		element.sendKeys(value);
+	}
 	public void waitInvisible(String locator) {
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(locator)));
+	}
+	public String getTextDynamic(String value) {
+		String dynamicLocator = String.format("//*[text()='%s']", value);
+		WebElement element = driver.findElement(By.xpath(dynamicLocator));
+		return element.getText();
+	}
+	public void waitVisibleDynamic(String value) {
+		WebDriverWait wait = new WebDriverWait(driver, timeouts);
+		String dynamicLocator = String.format("//*[text()='%s']", value);
+		WebElement element = driver.findElement(By.xpath(dynamicLocator));
+		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 
 	public void waitForProgressBar(final String locator) {
